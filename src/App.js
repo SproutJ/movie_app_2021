@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Food() {
+function Food(props) {
+  console.log(props);
   return <h1>I like potato</h1>;
 }
 
