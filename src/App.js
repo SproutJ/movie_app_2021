@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Potato() {
+function Movie() {
   return <h1>I like potato</h1>;
 }
 
@@ -8,7 +8,14 @@ function App() {
   return (
     <div>
       <h1>Hello React!!</h1>
-      <Potato />
+      <Movie />
+      <Movie />
+      <Movie />
+      <Movie />
+      <Movie />
+      <Movie />
+      <Movie />
+      <Movie />
       </div>
   );
 }
