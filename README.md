@@ -1,7 +1,27 @@
 # 최주선 202030135
 
 ## [09월 29일]
+- git version 확인
+```
+$ git version
+```
+- git defaultBranch 설정
+```
+$ git config --global init.defaultBranch main
+```
+- git 관련 모든 설정 확인
+```
+$ git config --list
+```
+- 기존 브랜치 변경
+```
+$ git branch -m master main
+```
 
+- 이미지 삽입 방법
+    - 상대 경로로 이미지를 삽입하는 방법
+        - import를 사용하는 방법
+        - require를 사용하는 방법
 
 ## [09월 15일]
 
