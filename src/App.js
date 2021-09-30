@@ -9,6 +9,8 @@ function App() {
     <div>
       <h1>Hello React!!</h1>
       <Food fav="kimchi" />
+      <Food fav="samgiosal" />
+      <Food fav="chukumi" />
       </div>
   );
 }
