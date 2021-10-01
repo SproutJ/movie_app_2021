@@ -18,10 +18,24 @@ $ git config --list
 $ git branch -m master main
 ```
 
+- React 프로젝트 clone하기
+```
+$ git clone {레포지토리 주소}
+```
+* 클론 후에
+```
+$ cd {레포지토리 이름}
+$ npm install
+$ npm start
+```
+를 하면 package.json에 등록되어 있는 module을 설치하게 된다.
+
 - 이미지 삽입 방법
     - 상대 경로로 이미지를 삽입하는 방법
         - import를 사용하는 방법
         - require를 사용하는 방법
+
+- prop-types : props의 자료형을 검사할 수 있도록 만들어 주는 도구.
 
 ## [09월 15일]
 
