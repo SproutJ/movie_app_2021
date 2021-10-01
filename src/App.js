@@ -1,62 +1,44 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, {Component} from 'react'
 
-const foodLike = [
-  {
-    id: 1,
-    name: 'strawberry',
-    image: 'https://t1.daumcdn.net/cfile/blog/99C56E4E5C495B0803',
-    alt: '딸기',
-    rating: 5.0
-  },
-  {
-    id: 2,
-    name: 'juice',
-    image: 'http://image.dongascience.com/Photo/2017/03/14909336653856.jpg',
-    alt: '주스',
-    rating: 4.0
-  },
-  {
-    id: 3,
-    name: 'tteokbokki',
-    image: 'https://cdn.kihoilbo.co.kr/news/photo/202008/880134_302005_3430.png',
-    alt: '떡볶이',
-    rating: 4.5
+class App extends Component {
+  constructor(props){
+    super(props)
+    console.log('constructor')
   }
-]
-
-const renderFood = dish => <Food
-  key={dish.id}
-  name={dish.name}
-  picture={dish.image}
-  alt={dish.alt}
-  rating={dish.rating}
-  />
-
-  Food.propTypes = {
-    name: PropTypes.string.isRequired,
-    picture: PropTypes.string.isRequired,
-    rating: PropTypes.number
+  state = {
+    count: 0
   }
 
-function App() {
-  console.log(foodLike.map(renderFood));
-  return (
-    <div> 
-      <h1>Hello React!!</h1> 
-      {foodLike.map(renderFood)}
+  add = () => {
+    this.setState(current => ({count: this.state.count +1}))
+  }
+  minus = () => {
+    this.setState(current => ({count: this.state.count -1}))
+  }
+
+  componentDidMount() {
+    console.log('componentDidMount');
+  }
+
+  componentDidUpdate() {
+    console.log('componentDidUpdate');
+  }
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount');
+  }
+
+  render() {
+    console.log('render');
+    return(
+      <div>
+        <h1> The number is: {this.state.count} </h1>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
       </div>
-  );
+    )
+  }
+  
 }
 
-function Food({ name, picture, alt, rating }) {
-  return (
-    <div>
-      <h2>I like {name}.</h2>
-      <h4>{rating}/5.0</h4>
-      <img alt={alt} src={picture} />
-    </div>
-  )
-}
-
-export default App;
+export default App

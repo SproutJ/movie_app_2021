@@ -1,6 +1,10 @@
 # 최주선 202030135
 
 ## [09월 29일]
+
+>실습 파일<br>
+App.js<br>
+
 - git version 확인
 ```
 $ git version
@@ -30,14 +34,25 @@ $ npm start
 ```
 를 하면 package.json에 등록되어 있는 module을 설치하게 된다.
 
-- 이미지 삽입 방법
-    - 상대 경로로 이미지를 삽입하는 방법
-        - import를 사용하는 방법
-        - require를 사용하는 방법
 
 - prop-types : props의 자료형을 검사할 수 있도록 만들어 주는 도구.
 
+[05장. State와 클래스형 컴포넌트]
+* props는 정적인 데이터만 다룰 수 있다.
+- state
+    - state는 동적인 데이터를 다루기 위해 사용된다.
+    - state는 class형 컴포넌트에서 사용된다.
+
+- render() 함수
+    - class형 컴포넌트에서는 바로 return을 사용할 수 없음.
+    - 따라서 render() 함수 내에서 return문을 사용한다.
+    - 함수형 컴포넌트는 return 문이 JSX를 반환하고, 클래스형 컴포넌트는 render() 함수가 JSX를 반환한다.
+
+
 ## [09월 15일]
+
+>실습 파일<br>
+App.js<br>
 
 - props
     - 컴포넌트에서 컴포넌트로 전달하는 데이터.
@@ -53,7 +68,14 @@ $ npm start
 - map() 함수
     - 배열의 모든 원소마다 특정 작업을 하는 함수를 적용하고, 그 함수가 반환한 결과를 모아서 배열로 반환해 준다.
 
+
 ## [09월 08일]
+
+>실습 파일<br>
+package.json<br>
+index.js<br>
+App.js<br>
+index.html<br>
 
 [02장. React로 클론 코딩 시작]
 - 웹팩(Webpack)
@@ -76,6 +98,7 @@ $ npm start
     - function으로 정의한 곳.
 - JSX
     - 컴포넌트는 자바스크립트와 HTML을 조합한 JSX라는 문법을 사용해서 만든다.
+
 
 ## [09월 01일]
 
