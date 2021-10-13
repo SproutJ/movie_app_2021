@@ -20,10 +20,10 @@ class App extends Component {
   }
 
   render(){
-    const { isLoading } = this.state
+    const { isLoading, movies } = this.state
     return (
       <div>
-        {isLoading ? 'Loading...' : '영화 데이터의 출력'}
+        {isLoading ? 'Loading...' : movies.map()}
       </div>
     )
   }

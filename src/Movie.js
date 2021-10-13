@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 
-function Movie() {
+function Movie({id, year, title, summary, poster}) {
     return(
-        <h1>Hello</h1>
+        <h4>{title}</h4>
     )
 }
 
