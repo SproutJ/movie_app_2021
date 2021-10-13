@@ -10,7 +10,7 @@ App.css
 
 - Movie.js html코드 스타일 지정
 ```javascript
-<h3 class='movie-title' style={{backgroundColor:'red'}}>{title} </h3>
+<h3 class='movie-title' style={{backgroundColor:'red'}}>{title} </h3> // background-color가 아니라 backgroundColor
 ```
 
 - 포스터 이미지 불러오기
@@ -24,7 +24,7 @@ movies.map( (movie) => {
             year = {movie.year}
             title = {movie.title}
             summary = {movie.summary}
-            poster = {movie.medium_cover_image}
+            poster = {movie.medium_cover_image} // 이 부분
         />
     )})
 ```
@@ -34,7 +34,8 @@ movies.map( (movie) => {
     - 개행
 
 [7장. 영화 앱 다듬기]
-
+- class를 className으로 변경해야 하는 이유
+    - HTML의 class와 자바스크립트의 class라는 이름이 겹치면 react가 혼란스러울 수 있다.
 
 ## [10월 06일]
 
