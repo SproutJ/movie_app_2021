@@ -4,7 +4,37 @@
 
 >실습 파일<br>
 Movie.js  
-App.js
+App.js  
+Movie.css  
+App.css  
+
+- Movie.js html코드 스타일 지정
+```javascript
+<h3 class='movie-title' style={{backgroundColor:'red'}}>{title} </h3>
+```
+
+- 포스터 이미지 불러오기
+```javascript
+// App.js에서
+movies.map( (movie) => {
+     return (
+        <Movie 
+            key = {movie.id}
+            id = {movie.id}
+            year = {movie.year}
+            title = {movie.title}
+            summary = {movie.summary}
+            poster = {movie.medium_cover_image}
+        />
+    )})
+```
+
+- 주의할 점
+    - 괄호 짝 맞추기와 위치 및 정리
+    - 개행
+
+[7장. 영화 앱 다듬기]
+
 
 ## [10월 06일]
 
