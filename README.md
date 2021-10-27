@@ -1,5 +1,30 @@
 # 최주선 202030135
 
+## [10월 27일]
+
+>실습 파일  
+Movie.js  
+App.css  
+Movie.css  
+index.html
+
+
+- map()함수 기능
+    -  2번째 매개변수를 지정할 경우 배열의 index값을 반환해주는 기능이 있다.
+
+- 자바스크립트 slice 함수
+    - 사용 예시
+    ```
+    "hereisstring".slice(0, 10) // 결과는 "hereisstri"가 된다.
+    ```
+
+- 영화 앱 제목 변경 : public폴더에 있는 index.html에 있는 title부분 수정.
+
+[8장. 영화 앱에 여러 기능 추가하기]
+
+
+
+
 ## [10월 13일]
 
 >실습 파일<br>
