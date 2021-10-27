@@ -21,6 +21,17 @@ index.html
 - 영화 앱 제목 변경 : public폴더에 있는 index.html에 있는 title부분 수정.
 
 [8장. 영화 앱에 여러 기능 추가하기]
+- 라우터
+    - 사용자가 입력한 URL을 통해 특정 컴포넌트를 불러준다.
+    - 여러 종류의 라우터를 제공받기 위해서 설치
+    ```
+    npm install react-router-dom
+    ```
+    - 라우터에는 2가지 props를 전달할 수 있다. 하나는 URL을 위한 path props고, 또 하나는 URL에 맞는 컴포넌트를 불러주기 위한 component props 입니다.
+
+- 문제 : 링크를 클릭할 때마다 리액트가 죽고, 새 페이지가 열리는 문제.
+    - 원인 : a태그의 href속성이 페이지 전체를 다시 그리는 성질을 갖고 있기 때문이다.
+    - 해결 : react-router-dom의 Link 컴포넌트를 사용하면 된다.
 
 
 
