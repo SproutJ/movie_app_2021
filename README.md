@@ -4,9 +4,16 @@
 
 >실습 파일  
 Movie.js  
-App.css  
 Movie.css  
-index.html
+Navigation.js  
+App.css  
+App.js
+index.html  
+About.css  
+About.js  
+Home.css  
+Home.js  
+
 
 
 - map()함수 기능
