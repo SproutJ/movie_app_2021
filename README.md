@@ -7,7 +7,7 @@ Navigation.js / Movie.js / Detail.js / About.js / App.js / Navigation.css
 - movie-detail 추가
     - App.js
     ```javascript
-    ..
+    ...
     <Route path='/movie-detail' component={Detail} />
     ```
 
