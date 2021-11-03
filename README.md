@@ -4,14 +4,21 @@
 >실습 파일  
 Navigation.js / Movie.js / Detail.js / About.js / App.js / Navigation.css  
 
-- movie-detail
-    ```App.js
-    console
+- movie-detail 추가
+    - App.js
+    ```javascript
+    ..
+    <Route path='/movie-detail' component={Detail} />
     ```
 
 - 리다이렉트 기능
     - route props의 history키 활용.
     - history키에는 push, go, goBack, goForward와 같은 키가 있으며 그 키에는 url을 변경해주는 함수들이 있다. 이 함수들을 이용해서 리다이렉트 기능을 구현한다.
+
+- 컴포넌트 설치 오류
+    - rm 명령이 실행되지 않으면 shell을 관리자 권한으로 실행한 후 재시도.
+    - 그래도 안 되면 탐색기에서 삭제해보기.
+    - 원인 모를 문제 발생 시 cache clean과 rebuild를 통해 많은 부분 해결되기도 함.
 
 
 ## [10월 27일]
