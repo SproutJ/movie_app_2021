@@ -2,7 +2,16 @@
 
 ## [11월 03일]
 >실습 파일  
+Navigation.js / Movie.js / Detail.js / About.js / App.js / Navigation.css  
 
+- movie-detail
+    ```App.js
+    console
+    ```
+
+- 리다이렉트 기능
+    - route props의 history키 활용.
+    - history키에는 push, go, goBack, goForward와 같은 키가 있으며 그 키에는 url을 변경해주는 함수들이 있다. 이 함수들을 이용해서 리다이렉트 기능을 구현한다.
 
 
 ## [10월 27일]
