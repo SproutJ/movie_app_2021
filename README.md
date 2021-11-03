@@ -2,7 +2,7 @@
 
 ## [11월 03일]
 >실습 파일  
-Navigation.js / Movie.js / Detail.js / About.js / App.js / Navigation.css  
+Navigation.js / Navigation.css / Movie.js / Detail.js / About.js / App.js   
 
 - movie-detail 추가
     - App.js
