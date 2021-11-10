@@ -27,9 +27,7 @@ Detail.js / App.js / package.json
 
 [9장. 영화 앱 깃허브에 배포하기]
 - package.json 수정.
-- ```
-npm install gh-pages
-```
+- npm install gh-pages
 
 
 ## [11월 03일]
