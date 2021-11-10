@@ -26,6 +26,11 @@ Detail.js / App.js / package.json
     - HashRouter 대신 BrowserRouter 사용하기.
 
 [9장. 영화 앱 깃허브에 배포하기]
+- package.json 수정.
+- 
+```
+npm install gh-pages
+```
 
 
 ## [11월 03일]
