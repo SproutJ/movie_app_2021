@@ -1,5 +1,9 @@
 # 최주선 202030135
 
+## [11월 10일]
+>실습 파일  
+Detail.js
+
 ## [11월 03일]
 >실습 파일  
 Navigation.js / Navigation.css / Movie.js / Detail.js / About.js / App.js   
