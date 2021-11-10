@@ -2,7 +2,7 @@
 
 ## [11월 10일]
 >실습 파일  
-Detail.js / App.js  
+Detail.js / App.js / package.json   
 
 - 영화 제목 출력
     - 영화 제목을 출력하기 위해서 Detail.js에서 다음과 같은 부분을 추가한다.
@@ -24,6 +24,8 @@ Detail.js / App.js
 
 - router 사용 후 주소에 hash(#)가 나타나는 현상 제거법
     - HashRouter 대신 BrowserRouter 사용하기.
+
+[9장. 영화 앱 깃허브에 배포하기]
 
 
 ## [11월 03일]
