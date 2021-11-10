@@ -2,7 +2,29 @@
 
 ## [11월 10일]
 >실습 파일  
-Detail.js
+Detail.js / App.js  
+
+- 영화 제목 출력
+    - 영화 제목을 출력하기 위해서 Detail.js에서 다음과 같은 부분을 추가한다.
+    ```javascript
+    render(){
+        const { location } = this.props
+        if(location.state){
+            return (
+                <span>{ location.state.title }</span>
+            )
+        } else {
+            return null
+        }
+    }
+    ```
+    - 단순하게 location.state.title만 출력하도록 하면 /movie-detail로 이동 시 오류가 발생하게 된다. componentDidMount() 생명주기 함수에 작성한 리다이렉트 기능이 동작하지 않기 때문이다. 동작하지 않는 이유는 Detail 컴포넌트가 render() -> componentDidMount() 순서로 함수를 실행하기 때문이다.
+    - 즉, render() 안에서 location.state.title을 사용하려고 하는데 location.state가 undefined이기 때문이다.
+    - 해결법은 render() 안에 componentDidMount() 생명주기 함수에 작성한 리다이렉트 코드를 추가하는 것이다. 이 해결법을 적용한 것이 위에 있는 코드의 if문 부분이다.
+
+- router 사용 후 주소에 hash(#)가 나타나는 현상 제거법
+    - HashRouter 대신 BrowserRouter 사용하기.
+
 
 ## [11월 03일]
 >실습 파일  
