@@ -1,5 +1,30 @@
 # 최주선 202030135
 
+## [11월 17일]
+
+>실습 파일  
+TodoApp.html  
+
+- Todo List 예제
+    - TodoApp과 TodoList라는 2개의 컴포넌트로 구성됨.
+    - props와 state 사용.
+    - state를 사용해서 사용자가 입력한 텍스트와 할일 목록 관리.
+    - 이벤트 핸들러들이 인라인으로 각각 존재하는 것처럼 보여도 실제로는 이벤트 위임을 통해서 하나로 구현됨.
+    - handleChange는 모든 키보드 입력마다 react의 state를 갱신해서 보여줌.
+    - 시간 순 동작 순서
+        - 유저 입력 > handleChange > react의 state 갱신 > form element가 react state를 참조.
+    - handleSubmit은 버튼이 클릭될 때 발생하는 event를 처리함.
+    - render() 메소드에서 초기 렌더링 실행.
+    - onChange를 통해 input에 입력되는 값으로 state 상태 변경 준비.
+    - handleSubmit(e)에서 e.preventDefault() 메소드를 사용하는 이유
+        - 브라우저에서 양식을 제출할 때는 기본적으로 브라우저의 새로고침이 발생하는데 react나 SPA(Single Page Application)의 경우 필요가 없는 동작이기 때문에 이를 방지하기 위해 사용한다.
+
+- key props의 역할
+    - key는 props를 안정적으로 사용할 수 있도록 고유성을 부여하기 위해 필요함.
+    - react가 어떤 props를 변경, 추가 또는 삭제할지 식별하는 것을 도와줌.
+    - 반드시 date를 사용하지 않아도 됨. 배열의 index값을 사용해도 됨.
+    - 유일한 값이라면 그 값이 무엇이든 상관없음.
+
 ## [11월 10일]
 >실습 파일  
 Detail.js / App.js / package.json   
