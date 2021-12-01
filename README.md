@@ -1,5 +1,39 @@
 # 최주선 202030135
 
+## [12월 01일]
+
+- props
+    - props는 읽기 전용이다.
+    - 함수 컴포넌트나 클래스 컴포넌트 모두 컴포넌트의 자체 props를 수정하면 안 된다.
+    - 모든 react 컴포넌트는 자신의 props를 다룰 때 반드시 순수 함수처럼 동작해야 한다.
+
+- 함수 컴포넌트를 클래스로 변환
+    1. React.Component를 확장하는 동일한 이름의 ES6 class를 생성.
+    2. render()라고 불리는 빈 메서드를 추가.
+    3. 함수의 내용을 render() 메서드 안으로 이동.
+    4. render() 내용 안에 있는 props를 this.props로 변경.
+    5. 남아있는 빈 함수 선언을 삭제.
+
+- 클래스에 로컬 state 추가
+    - date를 props에서 state로 이동하는 과정으로 설명.
+    1. render() 메서드 안에 있는 this.props.date를 this.state.date로 변경.
+    2. 초기 this.state를 지정하는 calss constructor를 추가.
+    * 클래스 컴포넌트는 항상 props로 기본 constructor를 호출해야 한다.
+    3. <Clock />요소에서 date prop을 삭제.
+
+- state를 올바르게 사용하는 방법
+    - setState()
+        - 직접 state를 수정하면 안 된다.
+        - state 업데이트는 비동기적일 수도 있다.
+        - state 업데이트는 병합된다.
+
+- 이벤트 처리
+    - React 엘리먼트에서 이벤트를 처리하는 방식은 DOM 엘리먼트에서 이벤트를 처리하는 방식과 매우 유사하다.
+    - 몇 가지 문법 차이점은 다음과 같다.
+        - React의 이벤틑 소문자 대신 캐멀 케이스(camelCase)를 사용한다.
+        - JSX를 사용하여 문자열이 아닌 함수로 이벤트 핸들러를 전달한다.
+        - React에서는 false를 반환해도 기본 동작을 방지할 수 없다. 반드시 preventDefault를 명시적으로 호출해야 한다.
+
 ## [11월 24일]
 
 - ExternalPlugins 예제
